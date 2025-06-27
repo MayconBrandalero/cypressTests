@@ -1,0 +1,23 @@
+{
+  "name": "desafiotecnico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open --e2e",
+    "test:ui": "cypress run --e2e --spec 'cypress/e2e/UI/**/*.js'",
+    "test:api": "cypress run --e2e --spec 'cypress/e2e/API/*.js'",
+    "test:db": "cypress run --e2e --spec 'cypress/e2e/db/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "cypress": "^14.5.0"
+  },
+  "dependencies": {
+    "pg": "^8.16.2"
+  }
+}

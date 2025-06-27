@@ -30,7 +30,7 @@ describe ("Login Tests", () => {
         cy.login();
         cy.url().should('include', '/dashboard');
         
-        cy.wait(60000 * 15);
+        cy.wait(60000 * 31);
         
         cy.url().should('include', '/login');
         cy.get('input[name="username"]').should('be.visible');

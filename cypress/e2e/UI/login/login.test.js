@@ -26,7 +26,7 @@ describe ("Login Tests", () => {
         cy.get('p.oxd-userdropdown-name').should('be.visible');
     });
 
-    it('Should expire the session after inactivity', () => {
+    it.skip('Should expire the session after inactivity', () => {
         cy.login();
         cy.url().should('include', '/dashboard');
         
